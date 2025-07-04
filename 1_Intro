@@ -1,0 +1,30 @@
+Java script is a dynamically typed pogramming language used to create modern websites and applications that contains dynamic content.
+In javascript the data type of variable is decided at run time that's why its called dynamically types language. 
+it is used for both front-end and backend developement.
+java script is a single threaded language and performs one task at a time.
+its an interpreted language it means it executes mutilpe line fo code one by one.
+
+
+HTML defines content of webpage.
+CSS adds style to it.
+Javascript adds behaviour and logic to it.
+It can update and change both HTML and CSS.
+
+hello world program in java script..........
+
+
+
+<html>
+<head></head>
+<body>
+    <h1>Check the console for the message!</h1>
+    <!-- Script tag is used to write javascript code in html file -->
+    <script>
+        // This is our first JavaScript program
+       console.log("hello world!");
+    </script>
+</body>
+</html>
+
+
+

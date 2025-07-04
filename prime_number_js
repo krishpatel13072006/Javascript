@@ -1,0 +1,54 @@
+// function isprime(num)
+// {
+//     let factor=0;
+//     for(let i=1;i<=num;i++)
+//     {
+       
+//             if(num%i==0){
+//                 factor++;
+//             }
+           
+        
+       
+//     }
+//     if(factor==2)
+//         {
+//             console.log(num+"The number is prime");
+//         }
+//         else{
+//             console.log(num+"The number is not prime");
+//         }  
+//     }
+
+//     isprime(7);
+
+
+function isprime(num)
+{
+
+let factor=0;
+{
+for(let i=2;i<=num/2;i++)
+{
+    if(i==1 || i==0)
+{
+    console.log("wrong input");
+}
+
+    if (num%i==0) {
+        factor++;
+        break;
+    }
+}
+
+if (factor==1) {
+    console.log(num+"is a Not prime!")
+}else{
+    console.log(num+"is a prime!")
+}
+}
+
+
+
+}
+isprime(7);

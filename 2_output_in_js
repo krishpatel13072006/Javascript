@@ -1,0 +1,23 @@
+***Writing into an HTML element, using - innerHTML.***
+to acces a specific HTML element document.getElementById(id) method is used.
+Id attribute describes the html element.
+the innerHTML describes HTML content.
+
+example--------
+<p id="demo"></p>
+
+<script>
+document.getElementById("demo").innerHTML = 5 + 6;
+</script>
+
+
+***Writing into the browser console, using console.log().***
+console.log() method is used to display data in browser.
+it is used to debug the code.
+
+
+*** Using document.write() ***
+For testing purposes, it is convenient to use document.write(): 
+<script>
+document.write(5 + 6);
+    </script>

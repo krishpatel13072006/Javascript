@@ -1,0 +1,33 @@
+variables are the memory loactions used to store data or constants;
+In Javascript the data type of varible is decided based on run-time.
+
+there are three ways of creating varibles in javascript.
+using var,let,const keywords---
+
+1)var keyword is used to create a variable the has both global and block space.
+--variables created with var can be...
+#redeclared
+example- 
+var x=3;
+var x=4;
+var x="hello";
+
+
+2}let keyword is used to create a varaible with a block scope.
+--variable created with let keyword cannot....
+#redeclared in same block and can be redclared in another block
+example-
+let x=10;//globally declared
+{
+    let x=20;//allowed
+    let x=120;//not allowed
+   
+}
+
+
+3)const keyword is used to create a variable that has a fixed value and cannot be changed and has a blocked scope.
+cannot be #redeclared  
+example--
+const x=20;
+const x=30; error.....
+

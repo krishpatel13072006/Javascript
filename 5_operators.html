@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #one{
+            list-style:circle;
+            list-style-position: inside;
+            color:rgb(232, 98, 98);
+
+        }
+    </style>
+</head>
+<body>
+    <h1>Operators in JS</h1>
+    <h3 id="one">
+Arithematic operator is used to perform arithematic operations.
+<li>It includes:
+    <ol>+(Addition)</ol>
+    <ol>-(substraction)</ol>
+    <ol>*(multiplication)</ol>
+    <ol>/(division)</ol>
+    <ol>%(modulus) </ol>
+    
+</li>
+    </h3>
+    <p id="demo"></p>
+    <script>
+        let a=10;
+        let b=10;
+        let c=a+b;
+        let d=a-b;
+        let e=a*b;
+        let f=a/b;
+        let g=a%b;
+        document.getElementById('demo').innerHTML="Value of a is:"+a;
+        document.getElementById('demo').innerHTML+="</br>Value of b is:"+b;
+        document.getElementById('demo').innerHTML="Addition of a and b is: "+c+"";
+        document.getElementById('demo').innerHTML+="</br>Substraction of a and b is: "+d+"";
+        document.getElementById('demo').innerHTML+="</br>Multiplication of a and b is: "+e+"";
+        document.getElementById('demo').innerHTML+="</br>Division of a and b is: "+f+"";
+        document.getElementById('demo').innerHTML+="</br>Modulus of a and b is: "+g+"";
+        
+    </script>
+    
+</body>
+</html>
