@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practice question</title>
+</head>
+<body>
+    <div class="container">
+        <div class="1div divs">div 1</div>
+        <div class="2div divs">div 2</div>
+        <div class="3div divs">div 3</div>
+        <div class="4div divs">div 4</div>
+    </div>
+    <script>
+    //   let divs=document.querySelectorAll(".divs")
+        
+    //   divs.forEach((x)=>{
+    //     x.addEventListener("click",(e)=>{
+    //         alert(e.target.innerText);
+    //     })
+    //   })
+
+      let div=document.querySelector(".container");
+    //   function iterat(e){
+    //     alert(e.target.innerText);
+    //   }
+      div.addEventListener("click",(e)=>{
+          alert(e.target.innerText);
+          alert(e.target.getAttribute("class"));
+      });
+       
+      for(let i=5;i<=100;i++)
+      {
+        let divv=document.createElement("div");
+        divv.innerText="div "+i;
+         divv.setAttribute("class",`${i} div`);
+        div.append(divv);
+       
+        
+      }
+   
+
+    </script>
+    </body>
+</html>

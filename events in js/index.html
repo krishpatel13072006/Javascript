@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+
+</style>
+
+<body>
+
+    <!--inline event handling-->
+    <h2 class="head2">Krish Patel</h2>
+    <button onclick="alert('clicked!')">click me</button>
+    <button ondblclick="console.log('clicked twice')">hit me!</button>
+    <p onmouseover="style='color:red; background-color:blue'">hello</p>
+    <h1 id="head1">Hello coders</h1>
+
+
+    <script>
+
+        //evetn handling using js
+        let heading1 = document.querySelector("#head1");
+        heading1.onmouseover = () => {
+            heading1.style.fontSize = "1.5rem";
+            heading1.style.color = "green";
+            heading1.style.backgroundColor = "whitesmoke";
+            console.log("visited over heading!");
+        }
+
+        //event object
+        heading1.onclick = (e) => {
+            alert("no need to click on heading fool!");
+
+            console.log(e.type);
+            console.log(e.target);
+            console.log(e.clientX);
+            console.log(e.clientY);
+        }
+
+        //event listners
+        //add event listners
+        let p = document.querySelector("p");
+        p.addEventListener("click", (e) => {
+            alert("ohho you clicked!!");
+
+        })
+
+        const event2 = (e) => {
+
+            p.innerHTML = p.innerHTML + "Welcome to my webpage!!!";
+
+        }
+        p.addEventListener("click", event2)
+
+        const event3 = (e) => {
+            p.style.backgroundColor = "yellow";
+        }
+        p.addEventListener("click", event3)
+
+
+        //remove eventListners
+        p.removeEventListener("click", event2)
+
+    </script>
+</body>
+
+</html>

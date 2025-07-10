@@ -8,6 +8,7 @@ let ob={
 
 //object clonning using spread operator  {...obj_name}
 let ob2={...ob};
+
 ob2.gender="male";
 
 console.log(ob);

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Document Object Model </title>
+</head>
+
+<style>
+    .box {
+        width: 30vw;
+        height: 20vh;
+        background-color: rgb(26, 169, 169);
+        margin: 1rem;
+        text-align: center;
+        color: white;
+    }
+
+</style>
+
+<body>
+
+<div id="div1">
+      <h1 id="head1" class="heading">Hello world </h1>
+    <h2 id="head2" class="heading">Welcome to my page!</h2>
+    <p id="para1" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, consequuntur?
+    </p>
+    <p id="para2" class="para">Lorem ipsum dolor sit amet.</p>
+    <button id="btn">click me</button>
+</div>
+  
+
+
+    <div class="box">box1</div>
+    <div class="box">box2</div>
+    <div class="box">box3</div>
+
+    <script>
+        let x = document.getElementById("head1");
+        x.innerText = x.innerText + " is first program in every language!!";
+        // console.log(x.innerText);
+
+
+
+        let div = document.querySelectorAll(".box");
+
+        // let j=div[0].innerHTML="<h1>Krish Patel</h1>";
+        // console.log(j);
+
+        let index = 1;
+        for (let i of div) {
+            (i.innerText = "I am box number " + index);
+            index++;
+        }
+
+        //getAttribute
+        let element = document.querySelector("button");
+        let val = element.getAttribute("id");
+        // console.log(val);
+
+        //setAttribute
+        val = element.setAttribute("id", "newpara");
+        console.log(val);
+
+        //style attribute
+        let box = document.querySelectorAll(".box");
+        box[0].style.fontSize = "1.2rem";
+        box[1].style.backgroundColor = "red";
+
+        box.forEach((i)=>{
+            i.style.fontWeight = "1000";
+            i.style.border = "3px solid black";
+            
+        });
+
+            //insert new element
+            let btn=document.createElement("button");
+            btn.innerText="Push Here!"
+            btn.style.backgroundColor="red";
+            btn.style.color="white";
+
+             let el = document.querySelector("#div1");
+             el.append(btn);
+        
+
+            let h=document.createElement("h1");
+            h.innerText="Hello visiters !"
+            el.before(h);
+
+             let h2=document.createElement("h2");
+            h2.innerText="Hello visiters !"
+            box[0].prepend(h2);
+            // box[1].prepend(h2);
+            // box[2].prepend(h2);
+
+           
+            
+        
+        
+
+
+    </script>
+</body>
+
+</html>
